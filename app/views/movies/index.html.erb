@@ -1,1 +1,11 @@
-<h1> Welcome to my Awesome Web app </h> 
+<% @movies.each do |movie| %>
+	<h1><%= movie.title %></h1>
+	<i><%=movie.movie_length %></i>
+	<p><%=movie.description%></i>
+
+  <hr />
+<% end %>
+
+
+
+
